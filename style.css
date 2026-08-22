@@ -1,0 +1,508 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172b4d;
+    background: white;
+}
+
+
+/* ================= NAVBAR ================= */
+
+header {
+    background: #09244d;
+}
+
+.navbar {
+    max-width: 1100px;
+    height: 70px;
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    color: white;
+    font-size: 22px;
+}
+
+.logo p {
+    color: white;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffd900;
+}
+
+
+/* ================= HOME ================= */
+
+.hero {
+    min-height: 340px;
+
+    background: #eaf4ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 40px max(30px, calc((100% - 1000px) / 2));
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.hero-text h1 {
+    color: #17355e;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.hero-text h2 {
+    color: #1265d5;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: #222;
+    max-width: 520px;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* CV BUTTON */
+
+.cv-button {
+    display: inline-block;
+
+    padding: 11px 18px;
+
+    background: #092b59;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cv-button:hover {
+    background: #1265d5;
+}
+
+.cv-button i {
+    margin-left: 6px;
+}
+
+
+/* ================= PHOTO ================= */
+
+.profile {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 5px solid white;
+
+    background: #ddd;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    flex-shrink: 0;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+
+    padding: 0 10px;
+}
+
+
+/* ================= INFORMATION ================= */
+
+.information {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1.8fr;
+
+    gap: 30px;
+
+    padding: 28px 0;
+}
+
+.box h2,
+.projects h2,
+.contact h2,
+.iot h2 {
+    color: #17355e;
+
+    font-size: 17px;
+
+    margin-bottom: 14px;
+}
+
+.box h2 i,
+.projects h2 i,
+.contact h2 i,
+.iot h2 i {
+    color: #1265d5;
+    margin-right: 8px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.box p {
+    color: #222;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills-list {
+    padding-left: 18px;
+}
+
+.skills-list li {
+    color: #222;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 12px;
+}
+
+.education th,
+.education td {
+    border: 1px solid #d0d5da;
+
+    padding: 9px 8px;
+
+    text-align: left;
+}
+
+.education th {
+    background: #f5f7fa;
+}
+
+
+/* ================= LOWER SECTION ================= */
+
+.lower-section {
+    display: grid;
+
+    grid-template-columns: 2.2fr 1fr;
+
+    gap: 30px;
+
+    padding-bottom: 30px;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.project-card {
+    border: 1px solid #d9dfe5;
+
+    border-radius: 5px;
+
+    padding: 13px;
+
+    background: white;
+
+    min-height: 145px;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    color: #17355e;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+    margin-bottom: 9px;
+}
+
+.project-card p {
+    color: #333;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    color: #086be8;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+/* ================= IOT ================= */
+
+.iot {
+    margin-top: 25px;
+}
+
+.iot-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #d1d7dd;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: none;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #1265d5;
+}
+
+.contact textarea {
+    height: 90px;
+
+    resize: vertical;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.buttons button {
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 4px;
+
+    background: #092b59;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: #1265d5;
+}
+
+.buttons button[type="reset"] {
+    background: #ddd;
+    color: #222;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #09244d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 14px;
+
+    font-size: 12px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 18px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 25px;
+
+        padding: 35px 25px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .information {
+        grid-template-columns: 1fr;
+    }
+
+    .lower-section {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .profile {
+        width: 160px;
+        height: 160px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .iot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    .hero-text h2 {
+        font-size: 18px;
+    }
+}
